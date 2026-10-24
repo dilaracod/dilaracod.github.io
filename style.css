@@ -1,72 +1,77 @@
-/* Ece'nin stil dosyası */
+/* Palet: zemin #fdf3e7, metin #2b2b2b, vurgu #b5452b */
+/* Deneme: bağlantı çalışıyor mu? */
 
-/* Bütün sayfa: zemin, yazı rengi, yazı tipi */
 body {
   background-color: #fdf3e7;
   color: #2b2b2b;
   font-family: Arial, sans-serif;
+  font-size: 18px;
   padding: 16px;
 }
-
-/* Üst kısım: başlık solda, menü sağda */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
 h1 {
   color: #b5452b;
-  font-size: 32px;
+  font-size: 36px;
+  margin: 0;
 }
-
-/* Menü: bağlantılar yan yana, renkli bir şeridin içinde */
+h2 {
+  color: #b5452b;
+  font-size: 24px;
+  margin: 24px 0 8px 0;
+}
+p {
+  line-height: 150%;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    background-color: white;
+    padding: 16px;
+    border-radius: 12px;
+}
 .menu {
-  display: flex;
-  gap: 16px;
-  background-color: #f6d5c4;
-  padding: 10px 16px;
-  border-radius: 10px;
+    display: flex;
+    gap: 16px;
 }
-
 a {
-  color: #8a2f14;
+    color: #b5452b;
 }
-
-/* Kartlar yan yana, sığmayan alt satıra */
 .kartlar {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 12px;
+  padding: 0;
+  list-style: none;
 }
-
-/* Tek bir kart */
 .kart {
-  width: 260px;
   background-color: white;
-  padding: 20;
+  padding: 16px;
   border: 2px solid #f0c9b8;
   border-radius: 12px;
 }
-
-/* Kulüp logosu: yuvarlak */
-.logo {
+.profil {
   max-width: 100%;
   border-radius: 50%;
-
-/* Kart başlıkları */
-h2 {
-  color: #b5452b;
-  font-size: 22px;
+  border: 4px solid white;
 }
-
-/* Alt kısım */
 footer {
-  margin: 24px 0 0 0;
-  background-color: #f6d5c4;
+  margin: 32px 0 0 0;
+  padding: 12px;
   text-align: center;
-  padding: 8px;
-  border-radius: 10px;
+  font-size: 14px;
+  color: #6b6b6b;
+}
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .kartlar {
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 28px;
+  }
 }
