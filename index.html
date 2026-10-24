@@ -1,25 +1,46 @@
 <!doctype html>
 <html lang="tr">
 <head>
-
   <meta charset="utf-8">
+  <!-- Telefonda sayfayı ekran genişliğinde çizer -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dilara Bozkurt</title>
+  <title>Ece'nin sayfası</title>
+  <!-- Stil dosyası: index.html ile aynı klasörde -->
+  <link rel="stylesheet" href="style.css">
 </head>
-<link rel="stylesheet" href="style.css">
 <body>
-<h1>Merhaba, ben Dilara Bozkurt</h1>
-<p>Muş Alparslan Üniversitesi Yazılım Mühendisliği 2. sınıftayım. Web sayfası yapmayı öğreniyorum.</p>
-<p><a href="projeler.html">Projelerim</a></p>
-<h2>İlgi alanlarım</h2>
-<ul class="kartlar">
-  <li class="kart">Kitap okumak</li>
-  <li class="kart">Yüzme</li>
-  <li class="kart">Müzik Dinlemek</li>
-</ul>
-<footer>Dilara Bozkurt  2026</footer>
+  <!-- Üst kısım: site adı ve menü -->
+  <header>
+    <h1>Ece'nin sayfası</h1>
+    <nav class="menü">
+      <a href="index.html">Ana sayfa</a>
+      <a href="https://tr.wikipedia.org">Vikipedi</a>
+    </nav>
+  </header>
+
+  <!-- Asıl içerik: tanıtım ve iki kart -->
+  <main>
+    <p>Merhaba, ben Ece. Yazılım Mühendisliği 2. sınıftayım ve bu hafta sayfama bir stil dosyası ekledim.</p>
+    <div class="kartlar">
+      <div class="kart">
+        <h2>Satranç Kulübü</h2>
+        <img class="logo" src="img/kulup-logo.svg" alt="Satranç Kulübü logosu: lacivert zemin üzerinde krem rengi bir at figürü" width="160">
+        <p>Kulübün duyurularını ben hazırlıyorum. Toplantılar her Cuma 15:00'te, kütüphanenin 2. katında.</p>
+      </div>
+      <div class="kart">
+        <h2>Bu dönem öğrendiklerim</h2>
+        <ul>
+          <li>HTML ile sayfanın yapısını kurmak</li>
+          <li>Sayfayı GitHub Pages ile yayınlamak</li>
+          <li>CSS ile renk, boşluk ve dizilim vermek</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <!-- Alt kısım -->
+  <footer>
+    <p>Ece · 2026</p>
+  </footer>
 </body>
 </html>
-  <img  class="profil" src="img/ben.jpg" alt="Dalgalı saclı bir fotoğraf" width="160">
-  <p>Sık girdiğim bir site: <a
-     href="https://www.instagram.com/">Instagram</a></p>
